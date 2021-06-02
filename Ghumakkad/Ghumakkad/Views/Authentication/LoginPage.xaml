@@ -21,7 +21,7 @@
                 <renderers:BorderlessEntry Grid.Column="1" Margin="0,0,20,0" Keyboard="Numeric" Placeholder="OTP" PlaceholderColor="{StaticResource OrangeColor}"/>
                 <BoxView Grid.Row="1" HeightRequest="1" VerticalOptions="Start" Grid.ColumnSpan="2" Opacity="0.1" BackgroundColor="{StaticResource OrangeColor}"/>
             </Grid>
-            <Button Grid.Row="3" Margin="0,60,0,0"  Text="Sign In" Padding="20" TextColor="{StaticResource WhiteColor}" FontSize="22">
+            <Button Grid.Row="3" Margin="0,60,0,0"  Text="Sign In" Padding="20" TextColor="{StaticResource WhiteColor}" FontSize="22" Command="{Binding NextPage}">
                 <Button.Background>
                     <LinearGradientBrush StartPoint="0,0"
                              EndPoint="1,0">
@@ -31,6 +31,7 @@
                           Offset="1.0"/>
                     </LinearGradientBrush>
                 </Button.Background>
+                
             </Button>
             <Label Grid.Row="4" Margin="0,10,0,0"  HorizontalOptions="Center">
                 <Label.FormattedText>

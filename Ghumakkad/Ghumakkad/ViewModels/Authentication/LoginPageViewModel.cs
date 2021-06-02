@@ -1,4 +1,6 @@
-﻿using Prism.Navigation;
+﻿using Ghumakkad.Views;
+using Prism.Commands;
+using Prism.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -16,7 +18,9 @@ namespace Ghumakkad.ViewModels
         #endregion
 
         #region Command
+        public DelegateCommand NextPage => new DelegateCommand(EventTimelinePageMethod);
 
+        
         #endregion
 
         #region Constructors
@@ -40,7 +44,10 @@ namespace Ghumakkad.ViewModels
         #endregion
 
         #region Private Implementation
-
+        private async void EventTimelinePageMethod()
+        {
+            await NavigationService.NavigateAsync($"{nameof(EventTimelinePage)}");
+        }
         #endregion
     }
 }

@@ -13,7 +13,7 @@ namespace Ghumakkad
         protected override async void OnInitialized()
         {
             InitializeComponent();
-            await NavigationService.NavigateAsync($"{nameof(NavigationPage)}/{nameof(EventTimelinePage)}");
+            await NavigationService.NavigateAsync($"{nameof(NavigationPage)}/{nameof(LoginPage)}");
         }
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
