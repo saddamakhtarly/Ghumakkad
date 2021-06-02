@@ -11,8 +11,9 @@
         </Grid>
     </NavigationPage.TitleView>
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout>
-
+            <!--Expander One-->
             <behaviors:Expander>
                 <behaviors:Expander.Header>                    
                     <Grid ColumnDefinitions="auto,*,auto" ColumnSpacing="0" Margin="0" Padding="0" BackgroundColor="LightGray">
@@ -119,7 +120,114 @@
                 </StackLayout>
                 
             </behaviors:Expander>
+            <!--Expander Two-->
+            <behaviors:Expander>
+                <behaviors:Expander.Header>
+                    <Grid ColumnDefinitions="auto,*,auto" ColumnSpacing="0" Margin="0" Padding="0" BackgroundColor="LightGray">
+                        <Label Grid.Column="0" Text="22 JULY, 2019" FontSize="20" Margin="10" VerticalTextAlignment="Center"/>
+                        <Label Grid.Column="2" Text="&#xf0dd;" FontFamily="fwFreeS"  FontSize="20" Margin="10" HorizontalOptions="End" VerticalTextAlignment="Start" />
+                    </Grid>
+                </behaviors:Expander.Header>
+                <StackLayout Spacing="0">
+                    <Grid ColumnDefinitions="auto,*" RowDefinitions="auto,auto,auto,auto" ColumnSpacing="5" Margin="0" RowSpacing="0" BackgroundColor="White"  >
+                        <Frame HasShadow="False" Grid.Row="0" Grid.RowSpan="2"   Grid.Column="0" CornerRadius="50" IsClippedToBounds="True" HeightRequest="50" WidthRequest="50" Margin="20,0" Padding="0" >
+                            <Image Source="one"
+                            Aspect="AspectFit" />
+                        </Frame>
+                        <Frame HasShadow="False" Grid.Row="2" Grid.RowSpan="2"   Grid.Column="0" CornerRadius="50" IsClippedToBounds="True" HeightRequest="40" WidthRequest="40" Margin="20,0" Padding="0" >
+                            <Image Source="dot"
+                            Aspect="AspectFit" />
+                        </Frame>
+                        <Label Grid.Row="0" Grid.Column="1" Text="Introduction" Margin="0" Padding="0" FontSize="20" />
+                        <Label Grid.Row="1" Grid.Column="1" Text="Lorem Ipsum is simply dummy text of the" Margin="0" Padding="0" FontSize="16" />
+                        <Label Grid.Row="2" Grid.Column="1" Margin="0" Padding="0" FontSize="16"  >
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="&#xf2f2;" FontFamily="fwFreeS" />
+                                    <Span Text=" 12:30 PM - 01:30 PM"  />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </Grid>
 
+                    <Grid ColumnDefinitions="auto,*" RowDefinitions="auto,auto,auto,30" ColumnSpacing="5" Margin="0" RowSpacing="0" BackgroundColor="White"  >
+                        <Frame HasShadow="False" Grid.Row="0" Grid.RowSpan="2"   Grid.Column="0" CornerRadius="50" IsClippedToBounds="True" HeightRequest="50" WidthRequest="50" Margin="20,0" Padding="0" >
+                            <Image Source="two"
+                            Aspect="AspectFit" />
+                        </Frame>
+                        <Frame HasShadow="False" Grid.Row="2" Grid.RowSpan="2"   Grid.Column="0" CornerRadius="50" IsClippedToBounds="True" HeightRequest="40" WidthRequest="40" Margin="20,0" Padding="0" >
+                            <Image Source="dot"
+                            Aspect="AspectFit" />
+                        </Frame>
+                        <Label Grid.Row="0" Grid.Column="1" Text="Introduction" Margin="0" Padding="0" FontSize="20" />
+                        <Label Grid.Row="1" Grid.Column="1" Text="Lorem Ipsum is simply dummy text of the" Margin="0" Padding="0" FontSize="16" />
+                        <Label Grid.Row="2" Grid.Column="1" Margin="0" Padding="0" FontSize="16"  >
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="&#xf2f2;" FontFamily="fwFreeS" />
+                                    <Span Text=" 12:30 PM - 01:30 PM"  />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Button 
+                            Grid.Row="3" 
+                            Grid.Column="1" 
+                            Text="Share Live" 
+                            BackgroundColor="Transparent" 
+                            FontSize="10" 
+                            Padding="0"
+                            CornerRadius="10"
+                            TextColor="Orange"
+                            HorizontalOptions="Start"
+                            BorderColor="Orange" 
+                            BorderWidth="1"/>
+                    </Grid>
+
+                    <Grid ColumnDefinitions="auto,*" RowDefinitions="auto,auto,auto,auto" ColumnSpacing="5" Margin="0" RowSpacing="0" BackgroundColor="White"  >
+                        <Frame HasShadow="False" Grid.Row="0" Grid.RowSpan="2"   Grid.Column="0" CornerRadius="50" IsClippedToBounds="True" HeightRequest="50" WidthRequest="50" Margin="20,0" Padding="0" >
+                            <Image Source="three"
+                            Aspect="AspectFit" />
+                        </Frame>
+                        <Frame HasShadow="False" Grid.Row="2" Grid.RowSpan="2"   Grid.Column="0" CornerRadius="50" IsClippedToBounds="True" HeightRequest="40" WidthRequest="40" Margin="20,0" Padding="0" >
+                            <Image Source="dot"
+                            Aspect="AspectFit" />
+                        </Frame>
+                        <Label Grid.Row="0" Grid.Column="1" Text="Introduction" Margin="0" Padding="0" FontSize="20" />
+                        <Label Grid.Row="1" Grid.Column="1" Text="Lorem Ipsum is simply dummy text of the" Margin="0" Padding="0" FontSize="16" />
+                        <Label Grid.Row="2" Grid.Column="1" Margin="0" Padding="0" FontSize="16"  >
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="&#xf2f2;" FontFamily="fwFreeS" />
+                                    <Span Text=" 12:30 PM - 01:30 PM"  />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </Grid>
+
+                    <Grid ColumnDefinitions="auto,*" RowDefinitions="auto,auto,auto,auto" ColumnSpacing="5" Margin="0" RowSpacing="0" BackgroundColor="White"  >
+                        <Frame HasShadow="False" Grid.Row="0" Grid.RowSpan="2"   Grid.Column="0" CornerRadius="50" IsClippedToBounds="True" HeightRequest="50" WidthRequest="50" Margin="20,0" Padding="0" >
+                            <Image Source="four"
+                            Aspect="AspectFit" />
+                        </Frame>
+                        <Frame HasShadow="False" Grid.Row="2" Grid.RowSpan="2"   Grid.Column="0" CornerRadius="50" IsClippedToBounds="True" HeightRequest="40" WidthRequest="40" Margin="20,0" Padding="0" >
+                            <Image Source="dot"
+                            Aspect="AspectFit" />
+                        </Frame>
+                        <Label Grid.Row="0" Grid.Column="1" Text="Introduction" Margin="0" Padding="0" FontSize="20" />
+                        <Label Grid.Row="1" Grid.Column="1" Text="Lorem Ipsum is simply dummy text of the" Margin="0" Padding="0" FontSize="16" />
+                        <Label Grid.Row="2" Grid.Column="1" Margin="0" Padding="0" FontSize="16"  >
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="&#xf2f2;" FontFamily="fwFreeS" />
+                                    <Span Text=" 12:30 PM - 01:30 PM"  />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </Grid>
+                </StackLayout>
+
+            </behaviors:Expander>
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
