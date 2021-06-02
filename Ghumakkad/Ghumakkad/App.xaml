@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<prism:PrismApplication xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ghumakkad.App"
+             xmlns:prism="clr-namespace:Prism.DryIoc;assembly=Prism.DryIoc.Forms">
+    <prism:PrismApplication.Resources>
+        <ResourceDictionary Source="Assets/Color.xaml" />
+        <Style TargetType="NavigationPage">
+            <Setter Property="BarBackgroundColor" Value="Orange" >
+                <!--<Setter.Value>
+                    <LinearGradientBrush StartPoint="0,0"
+                             EndPoint="1,0">
+                        <GradientStop Color="{StaticResource OrangeColor}"
+                          Offset="0.5"/>
+                        <GradientStop Color="{StaticResource AppYellowColor}"
+                          Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Setter.Value>-->
+            </Setter>
+            <Setter Property="BarTextColor" Value="White"></Setter>
+        </Style>
+    </prism:PrismApplication.Resources>
+</prism:PrismApplication>

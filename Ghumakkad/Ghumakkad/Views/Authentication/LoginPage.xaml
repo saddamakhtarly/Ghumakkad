@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:renderers="clr-namespace:Ghumakkad.Renderers"
+             x:Class="Ghumakkad.Views.LoginPage">
+    <ContentPage.Content>
+        <Grid RowDefinitions="auto,auto,auto,auto,auto" RowSpacing="0" BackgroundColor="{StaticResource WhiteColor}">
+
+            <Frame Grid.Row="0" IsClippedToBounds="True" Margin="0,100" HasShadow="False">
+                <Image Source="Logo"/>
+            </Frame>
+            <Grid Grid.Row="1" ColumnDefinitions="auto,*" RowDefinitions="auto,auto" Margin="0,20,0,0" Padding="0" RowSpacing="0">
+                <Label Grid.Column="0" Margin="30,0,10,0" VerticalOptions="Center" Text="&#xf3cd;" FontFamily="fwFreeS" FontSize="24" TextColor="{StaticResource OrangeColor}" />
+                <renderers:BorderlessEntry Grid.Column="1" Margin="0,0,20,0" Keyboard="Telephone" Placeholder="Mobile number" PlaceholderColor="{StaticResource OrangeColor}"/>
+                <BoxView Grid.Row="1" HeightRequest="1" VerticalOptions="Start" Grid.ColumnSpan="2" Opacity="0.1" BackgroundColor="{StaticResource OrangeColor}"/>
+            </Grid>
+            <Grid Grid.Row="2" ColumnDefinitions="auto,*" RowDefinitions="auto,auto" Margin="0,20,0,0" Padding="0" RowSpacing="0">
+                <Label Grid.Column="0" Margin="30,0,10,0" VerticalOptions="Center" Text="&#xf023;" FontFamily="fwFreeS" FontSize="24" TextColor="{StaticResource OrangeColor}" />
+                <renderers:BorderlessEntry Grid.Column="1" Margin="0,0,20,0" Keyboard="Numeric" Placeholder="OTP" PlaceholderColor="{StaticResource OrangeColor}"/>
+                <BoxView Grid.Row="1" HeightRequest="1" VerticalOptions="Start" Grid.ColumnSpan="2" Opacity="0.1" BackgroundColor="{StaticResource OrangeColor}"/>
+            </Grid>
+            <Button Grid.Row="3" Margin="0,60,0,0"  Text="Sign In" Padding="20" TextColor="{StaticResource WhiteColor}" FontSize="22">
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0,0"
+                             EndPoint="1,0">
+                        <GradientStop Color="{StaticResource OrangeColor}"
+                          Offset="0.5"/>
+                        <GradientStop Color="{StaticResource AppYellowColor}"
+                          Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Label Grid.Row="4" Margin="0,10,0,0"  HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Don't have account?" TextColor="#ffcb7f" FontSize="18" />
+                        <Span Text=" Sign Up" TextColor="{StaticResource OrangeColor}" FontSize="20" />
+
+
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
