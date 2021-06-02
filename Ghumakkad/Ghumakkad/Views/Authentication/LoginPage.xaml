@@ -2,8 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:renderers="clr-namespace:Ghumakkad.Renderers"
+             NavigationPage.HasNavigationBar="False"
              x:Class="Ghumakkad.Views.LoginPage">
     <ContentPage.Content>
+        <ScrollView>
         <Grid RowDefinitions="auto,auto,auto,auto,auto" RowSpacing="0" BackgroundColor="{StaticResource WhiteColor}">
 
             <Frame Grid.Row="0" IsClippedToBounds="True" Margin="0,100" HasShadow="False">
@@ -42,5 +44,6 @@
             </Label>
 
         </Grid>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

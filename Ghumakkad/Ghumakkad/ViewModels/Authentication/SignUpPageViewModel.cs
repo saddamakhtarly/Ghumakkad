@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Ghumakkad.ViewModels
 {
-    public class LoginPageViewModel : BaseViewModel
+   public class SignUpPageViewModel: BaseViewModel
     {
         #region Private Properties
 
@@ -20,7 +20,7 @@ namespace Ghumakkad.ViewModels
         #endregion
 
         #region Constructors
-        public LoginPageViewModel(INavigationService service) : base(service)
+        public SignUpPageViewModel(INavigationService service) : base(service)
         {
         }
 

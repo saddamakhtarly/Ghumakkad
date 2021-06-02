@@ -20,6 +20,7 @@ namespace Ghumakkad
             containerRegistry.RegisterForNavigation<NavigationPage>();
             //Authentication Pages
             containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>();
+            containerRegistry.RegisterForNavigation<SignUpPage, SignUpPageViewModel>();
             //App Pages
             containerRegistry.RegisterForNavigation<EventTimelinePage, EventTimelinePageViewModel>();
 

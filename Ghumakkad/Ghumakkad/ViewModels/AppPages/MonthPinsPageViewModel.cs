@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Ghumakkad.ViewModels
+namespace Ghumakkad.ViewModels.AppPages
 {
-    public class LoginPageViewModel : BaseViewModel
+   public class MonthPinsPageViewModel: BaseViewModel
     {
         #region Private Properties
 
@@ -20,7 +20,7 @@ namespace Ghumakkad.ViewModels
         #endregion
 
         #region Constructors
-        public LoginPageViewModel(INavigationService service) : base(service)
+        public MonthPinsPageViewModel(INavigationService service) : base(service)
         {
         }
 

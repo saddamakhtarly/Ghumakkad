@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:renderers="clr-namespace:Ghumakkad.Renderers"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="Ghumakkad.Views.SignUpPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid RowDefinitions="auto,auto,auto,auto,*,auto" RowSpacing="0" BackgroundColor="{StaticResource WhiteColor}">
+
+                <Grid Grid.Row="0" ColumnDefinitions="auto,*" ColumnSpacing="0" RowDefinitions="auto,auto" Margin="20,60,60,60" >
+                    <Label Grid.Row="0" Grid.Column="0" VerticalOptions="Start" Text="&#xf060;" FontFamily="fwFreeS" FontSize="24" TextColor="{StaticResource OrangeColor}" />
+                    <Frame Grid.Row="0" Grid.Column="1" IsClippedToBounds="True"  HasShadow="False" HorizontalOptions="CenterAndExpand" >
+                        <Image Source="Logo"/>
+                    </Frame>
+                    <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Text="Sign Up" FontSize="30" TextColor="{StaticResource OrangeColor}" HorizontalOptions="Center" VerticalOptions="Center" />
+                </Grid>
+                
+                <Grid Grid.Row="1" ColumnDefinitions="auto,*" RowDefinitions="auto,auto" Margin="0,20,0,0" Padding="0" RowSpacing="0">
+                    <Label Grid.Column="0" Margin="30,0,10,0" VerticalOptions="Center" Text="&#xf007;" FontFamily="fwFreeS" FontSize="24" TextColor="{StaticResource OrangeColor}" />
+                    <renderers:BorderlessEntry Grid.Column="1" Margin="0,0,20,0"  Placeholder="Name" PlaceholderColor="{StaticResource OrangeColor}"/>
+                    <BoxView Grid.Row="1" HeightRequest="1" VerticalOptions="Start" Grid.ColumnSpan="2" Opacity="0.1" BackgroundColor="{StaticResource OrangeColor}"/>
+                </Grid>
+                <Grid Grid.Row="2" ColumnDefinitions="auto,*" RowDefinitions="auto,auto" Margin="0,20,0,0" Padding="0" RowSpacing="0">
+                    <Label Grid.Column="0" Margin="30,0,10,0" VerticalOptions="Center" Text="&#xf3cd;" FontFamily="fwFreeS" FontSize="24" TextColor="{StaticResource OrangeColor}" />
+                    <renderers:BorderlessEntry Grid.Column="1" Margin="0,0,20,0" Keyboard="Numeric" Placeholder="Mobile number" PlaceholderColor="{StaticResource OrangeColor}"/>
+                    <BoxView Grid.Row="1" HeightRequest="1" VerticalOptions="Start" Grid.ColumnSpan="2" Opacity="0.1" BackgroundColor="{StaticResource OrangeColor}"/>
+                </Grid>
+                <Grid Grid.Row="3" ColumnDefinitions="auto,*" RowDefinitions="auto,auto" Margin="0,20,0,0" Padding="0" RowSpacing="0">
+                    <Label Grid.Column="0" Margin="30,0,10,0" VerticalOptions="Center" Text="&#xf3c5;" FontFamily="fwFreeS" FontSize="24" TextColor="{StaticResource OrangeColor}" />
+                    <renderers:BorderlessEntry Grid.Column="1" Margin="0,0,20,0" Keyboard="Numeric" Placeholder="PIN code" PlaceholderColor="{StaticResource OrangeColor}"/>
+                    <BoxView Grid.Row="1" HeightRequest="1" VerticalOptions="Start" Grid.ColumnSpan="2" Opacity="0.1" BackgroundColor="{StaticResource OrangeColor}"/>
+                </Grid>
+                <Button Grid.Row="5" Margin="0"  Text="Sign Up" Padding="20" TextColor="{StaticResource WhiteColor}" FontSize="22">
+                    <Button.Background>
+                        <LinearGradientBrush StartPoint="0,0"
+                             EndPoint="1,0">
+                            <GradientStop Color="{StaticResource OrangeColor}"
+                          Offset="0.5"/>
+                            <GradientStop Color="{StaticResource AppYellowColor}"
+                          Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
