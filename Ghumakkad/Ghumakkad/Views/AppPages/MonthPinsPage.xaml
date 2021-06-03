@@ -5,7 +5,7 @@
              x:Class="Ghumakkad.Views.MonthPinsPage">
     <ContentPage.Content>
         <StackLayout>
-           
+            <Label Text="MonthPinsPage" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -14,6 +14,8 @@ namespace Ghumakkad
         {
             InitializeComponent();
             await NavigationService.NavigateAsync($"{nameof(NavigationPage)}/{nameof(LoginPage)}");
+             //await NavigationService.NavigateAsync($"{nameof(NavigationPage)}/{nameof(AppTabPage)}");
+            //await NavigationService.NavigateAsync($"{nameof(AppTabPage)}");
         }
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
@@ -23,6 +25,8 @@ namespace Ghumakkad
             containerRegistry.RegisterForNavigation<SignUpPage, SignUpPageViewModel>();
             //App Pages
             containerRegistry.RegisterForNavigation<EventTimelinePage, EventTimelinePageViewModel>();
+            containerRegistry.RegisterForNavigation<MonthPinsPage, MonthPinsPageViewModel>();
+            containerRegistry.RegisterForNavigation<AppTabPage, AppTabPageViewModel>();
 
         }
         protected override void OnStart()

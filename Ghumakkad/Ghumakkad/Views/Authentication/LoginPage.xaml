@@ -4,6 +4,7 @@
              xmlns:renderers="clr-namespace:Ghumakkad.Renderers"
              NavigationPage.HasNavigationBar="False"
              x:Class="Ghumakkad.Views.LoginPage">
+    
     <ContentPage.Content>
         <ScrollView>
         <Grid RowDefinitions="auto,auto,auto,auto,auto" RowSpacing="0" BackgroundColor="{StaticResource WhiteColor}">
@@ -37,10 +38,15 @@
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text="Don't have account?" TextColor="#ffcb7f" FontSize="18" />
-                        <Span Text=" Sign Up" TextColor="{StaticResource OrangeColor}" FontSize="20" />
+                            <Span Text=" Sign Up" TextColor="{StaticResource OrangeColor}" FontSize="20"  >
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{ Binding SignUpCommand}"/>
+                                </Span.GestureRecognizers>
+                                
+                            </Span>
 
 
-                    </FormattedString>
+                        </FormattedString>
                 </Label.FormattedText>
             </Label>
 

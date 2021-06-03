@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Ghumakkad.ViewModels
 {
-   public class MonthPinsPageViewModel: BaseViewModel
+ public   class AppTabPageViewModel: BaseViewModel
     {
         #region Private Properties
 
@@ -20,9 +20,9 @@ namespace Ghumakkad.ViewModels
         #endregion
 
         #region Constructors
-        public MonthPinsPageViewModel(INavigationService service) : base(service)
+        public AppTabPageViewModel(INavigationService service) : base(service)
         {
-            Title = "Month Pins";
+            Title = "Event Timeline";
         }
 
         //Only run first time after Constructor

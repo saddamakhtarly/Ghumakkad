@@ -19,8 +19,11 @@ namespace Ghumakkad.ViewModels
 
         #region Command
         public DelegateCommand NextPage => new DelegateCommand(EventTimelinePageMethod);
+        public DelegateCommand SignUpCommand => new DelegateCommand(SignUpCommandMethod);
 
-        
+       
+
+
         #endregion
 
         #region Constructors
@@ -46,7 +49,11 @@ namespace Ghumakkad.ViewModels
         #region Private Implementation
         private async void EventTimelinePageMethod()
         {
-            await NavigationService.NavigateAsync($"{nameof(EventTimelinePage)}");
+            await NavigationService.NavigateAsync($"{nameof(AppTabPage)}");
+        }
+        private async void SignUpCommandMethod()
+        {
+            await NavigationService.NavigateAsync($"{nameof(SignUpPage)}");
         }
         #endregion
     }

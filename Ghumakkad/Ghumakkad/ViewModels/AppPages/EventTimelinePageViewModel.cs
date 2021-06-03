@@ -35,6 +35,7 @@ namespace Ghumakkad.ViewModels
         #region Constructors
         public EventTimelinePageViewModel(INavigationService service) : base(service)
         {
+            Title = "Event Timeline";
             EventsList = new List<EventNumber>
             {
                 new EventNumber{Title="Introduction", Description="Lorem Ipsum is simply dummy text of the", TimeShow1="\uf2f2", TimeShow2=" 12:30 PM - 01:30 PM",  LiveButton="Share Live" , FramOne="1" },
