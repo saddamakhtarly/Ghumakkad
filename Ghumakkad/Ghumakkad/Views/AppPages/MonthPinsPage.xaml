@@ -4,8 +4,29 @@
            
              x:Class="Ghumakkad.Views.MonthPinsPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="MonthPinsPage" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
-        </StackLayout>
+        <Grid RowDefinitions="auto,auto,auto,auto,auto" RowSpacing="0">
+            <Frame Grid.Row="0" Padding="0" Margin="0" IsClippedToBounds="True">
+                <Image Source="Calander" Aspect="Fill"/>
+            </Frame>
+            <Grid Grid.Row="1" ColumnDefinitions="auto,*,auto" Margin="20">
+                <Label VerticalOptions="Center" Text="Frog'n' Studioz" Grid.Column="0" FontSize="18" FontAttributes="Bold"/>
+                <Label VerticalOptions="Center" TextColor="{StaticResource LightGrayColor}"  Text="Mumbai, India" Grid.Column="1" FontSize="14" />
+                <Label VerticalOptions="Center"  TextColor="{StaticResource LightGrayColor}" Text="21/07/2019" Grid.Column="2" FontSize="14" />
+            </Grid>
+            <Label TextColor="{StaticResource LightGrayColor}" Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since .." Grid.Row="2" FontSize="14" Margin="20,0,20,10"/>
+            <Frame Grid.Row="3" Padding="0" Margin="20,0,20,10" CornerRadius="10" IsClippedToBounds="True">
+                <Image Source="Map2" Aspect="Fill"/>
+            </Frame>
+
+            <Label Grid.Row="4" Margin="20" HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="&#xf058;" FontFamily="fwFreeS" FontSize="20" TextColor="{StaticResource AppYellowColor}"/>
+                        <Span Text="  COMING, ON THE WAY" FontSize="20" TextColor="{StaticResource AppYellowColor}"/>
+
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

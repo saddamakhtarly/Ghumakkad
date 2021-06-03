@@ -159,4 +159,13 @@
   <ItemGroup>
     <BundleResource Include="Resources\three.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Calander.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Map2.png" />
+  </ItemGroup>
 </Project>
