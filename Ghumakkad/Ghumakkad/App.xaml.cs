@@ -27,6 +27,7 @@ namespace Ghumakkad
             containerRegistry.RegisterForNavigation<EventTimelinePage, EventTimelinePageViewModel>();
             containerRegistry.RegisterForNavigation<MonthPinsPage, MonthPinsPageViewModel>();
             containerRegistry.RegisterForNavigation<AppTabPage, AppTabPageViewModel>();
+            containerRegistry.RegisterForNavigation<GhumakkadPage, GhumakkadPageViewModel>();
 
         }
         protected override void OnStart()

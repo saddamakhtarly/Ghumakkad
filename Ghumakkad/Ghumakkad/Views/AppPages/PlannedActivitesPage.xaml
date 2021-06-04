@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:behaviors="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="Ghumakkad.Views.PlannedActivitesPage">
+    <ContentPage.Content>
+        <ScrollView>
+        <Grid RowDefinitions="auto,auto,auto" Margin="10" BackgroundColor="Transparent">
+            <!--Row 0 ==> auto-->
+            <Grid Grid.Row="0" RowDefinitions="auto,auto,auto" ColumnDefinitions="auto,*" ColumnSpacing="20" Margin="20" Padding="0">
+                <Frame  Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Padding="0" Margin="0" HeightRequest="70" WidthRequest="70" CornerRadius="25" IsClippedToBounds="True" HasShadow="True" >
+                    <Image Source="girl" Aspect="Fill"/>
+                </Frame>
+                <Label TextColor="Gray" FontSize="20" Text="Aneela Dogra." Grid.Row="0" Grid.Column="1" VerticalOptions="Start"  />
+                <Label Grid.Row="1" Grid.Column="1">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="78 Places explored" TextColor="Orange" />
+                            <Span Text="    &#xf111;    " FontFamily="fwFreeS" TextColor="LightGray"  />
+                            <Span Text="57 reviews" TextColor="LightGray" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <ProgressBar Progress="0.5" Grid.Row="2" Grid.Column="1" />
+            </Grid>
+            <!--Row 1 ==> auto-->
+            <Frame Grid.Row="1" BackgroundColor="White" CornerRadius="10">
+            <Grid ColumnDefinitions="auto,*" RowDefinitions="auto,auto,auto,auto,40,auto,auto,auto,40" >
+                <!--Row 0 ==> auto-->
+                <Label Grid.Column="0" Grid.Row="0"  Text="PLANNED ACTIVITIES" VerticalOptions="Center"  />
+                        <Frame Grid.Column="1" Grid.Row="0" HorizontalOptions="End" VerticalOptions="Start" Margin="0" Padding="0" CornerRadius="20">
+                            <behaviors:Expander Padding="0"  >
+                                <behaviors:Expander.Header>
+                                    <Grid ColumnDefinitions="auto,auto" ColumnSpacing="0" Margin="0" Padding="0" BackgroundColor="LightGray">
+                                        <Label Grid.Column="0" Text="JULY 2019" FontSize="12" Margin="10" VerticalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                        <Label Grid.Column="1" Text="&#xf0dd;" FontFamily="fwFreeS"  FontSize="20" Margin="10" HorizontalOptions="End" VerticalTextAlignment="Start"/>
+                                    </Grid>
+                                </behaviors:Expander.Header>
+                                <StackLayout Spacing="0"  BackgroundColor="White">
+                                    <Label Grid.Column="0" Text="AUG 2019" FontSize="12" Margin="10" VerticalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                    <Label Grid.Column="0" Text="SEP 2019" FontSize="12" Margin="10" VerticalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                    <Label Grid.Column="0" Text="OCT 2019" FontSize="12" Margin="10" VerticalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                </StackLayout>
+                            </behaviors:Expander>
+                        </Frame>    
+                    <!--Row 1 ==> auto-->
+                <Label Grid.Column="0" Grid.Row="1" Text="Royal Stories HKO" FontSize="18" FontAttributes="Bold" Margin="0,20,0,0" />
+                <Label Grid.Column="1" Grid.Row="1" Text="Delhi NCR, India"  FontSize="16" TextColor="Orange"  Margin="0,20,0,0"/>
+                <!--Row 2 ==> auto-->
+                <Label Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Text="Lorem Ipsum is simply dummy text of the printing" FontSize="15"/>
+                <!--Row 3 ==> auto-->
+                <Label Grid.Column="0"   Grid.Row="3" Text="06/07/2019" TextColor="LightGray" />
+                <Label Grid.Column="1" Grid.Row="3" >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="&#xf2f2; " FontFamily="fwFreeS" TextColor="LightGray"  />
+                            <Span Text="Concert 15 days from now" TextColor="LightGray" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <!--Row 4 ==> auto-->
+                <Button Grid.Column="0" Grid.Row="4" Text="Yes Attending" BorderWidth="1" TextColor="Orange"  CornerRadius="10" BorderColor="Orange" BackgroundColor="Transparent"/>
+                <Label Grid.Column="1" Grid.Row="4" Text="View complete detail" TextColor="LightGray" VerticalOptions="Center" />
+                <!--Row 5 ==> auto-->
+                <Label Grid.Column="0" Grid.Row="5" Text="Royal Stories HKO" FontSize="18" FontAttributes="Bold"   Margin="0,20,0,0"/>
+                <Label Grid.Column="1" Grid.Row="5" Text="Delhi NCR, India"  FontSize="16" TextColor="LightGray" Margin="0,20,0,0"/>
+                <!--Row 6 ==> auto-->
+                <Label Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="2" Text="Lorem Ipsum is simply dummy text of the printing" FontSize="15"/>
+                <!--Row 7 ==> auto-->
+                <Label Grid.Column="0"   Grid.Row="7" Text="06/07/2019" TextColor="LightGray" />
+                <Label Grid.Column="1" Grid.Row="7" >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="&#xf2f2; " FontFamily="fwFreeS" TextColor="LightGray"  />
+                            <Span Text="Concert 15 days from now" TextColor="LightGray" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <!--Row 8 ==> auto-->
+                <Button Grid.Column="0" Grid.Row="8" Text="Yes Attending" BorderWidth="1" TextColor="Orange"  CornerRadius="10" BorderColor="Orange" BackgroundColor="Transparent"/>
+                <Label Grid.Column="1" Grid.Row="8" Text="View complete detail" TextColor="LightGray" VerticalOptions="Center" />
+               
+
+
+
+
+
+
+
+            </Grid>
+            </Frame>
+            <!--Row 3 ==> auto-->
+            <Label Grid.Row="3" FontSize="18" HorizontalOptions="Center" Text="ANY OTHER PLANNED ACTIVITY ?" FontAttributes="Bold" TextColor="Orange" Margin="20"/>
+        </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

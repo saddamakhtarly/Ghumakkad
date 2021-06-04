@@ -13,8 +13,8 @@
     </NavigationPage.TitleView>
     <!--Pages can be added as references or inline-->
     
-    <view:EventTimelinePage Title="EventTimelinePage" IconImageSource="icon"  />
-    <view:MonthPinsPage Title="MonthPinsPage" IconImageSource="icon" />
-    <view:MonthPinsPage Title="MonthPinsPage" IconImageSource="icon" />
-    <view:MonthPinsPage Title="MonthPinsPage" IconImageSource="icon" />
+    <view:EventTimelinePage Title="Event Timeline" IconImageSource="icon"  />
+    <view:MonthPinsPage Title="Month Pins" IconImageSource="icon" />
+    <view:PlannedActivitesPage Title="Planned Activites" IconImageSource="icon" />
+    <view:GhumakkadPage Title="Ghumakkad" IconImageSource="icon" />
 </TabbedPage>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ghumakkad.Views.GhumakkadPage">
+    <ContentPage.Content>
+        <ScrollView>
+        <Grid Margin="10,20,0,0" RowDefinitions="auto,auto,auto,auto,auto,auto" ColumnDefinitions="auto,*">
+            <!--Row 0 ==> auto-->
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="PACK YOUR BAGS" FontAttributes="Bold" FontSize="18" TextColor="Gray" Margin="10,0,0,0"/>
+            <!--Row 1 ==> auto-->
+            <ScrollView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalScrollBarVisibility="Never" >
+                <StackLayout Orientation="Horizontal" >
+                    <Frame Margin="10" Padding="0" CornerRadius="20" IsClippedToBounds="True"  WidthRequest="150" HeightRequest="150">
+                        <Grid RowDefinitions="*" Margin="0" Padding="0">
+                            <Image Grid.Row="0" Source="img1" Aspect="AspectFill"/>
+                            <Label Grid.Row="0" Text="Saddam" VerticalOptions="End" HorizontalOptions="Start" TextColor="White" FontSize="Title" Margin="10,0,0,20"/>
+                        </Grid>
+                    </Frame>
+                    <Frame Margin="10" Padding="0" CornerRadius="20" IsClippedToBounds="True"  WidthRequest="150" HeightRequest="150">
+                        <Grid RowDefinitions="*" Margin="0" Padding="0">
+                            <Image Grid.Row="0" Source="img2" Aspect="AspectFill"/>
+                            <Label Grid.Row="0" Text="Saddam" VerticalOptions="End" HorizontalOptions="Start" TextColor="White" FontSize="Title" Margin="10,0,0,20"/>
+                        </Grid>
+                    </Frame>
+
+                    <Frame Margin="10" Padding="0" CornerRadius="20" IsClippedToBounds="True"  WidthRequest="150" HeightRequest="150">
+                        <Grid RowDefinitions="*" Margin="0" Padding="0">
+                            <Image Grid.Row="0" Source="img1" Aspect="AspectFill"/>
+                            <Label Grid.Row="0" Text="Saddam" VerticalOptions="End" HorizontalOptions="Start" TextColor="White" FontSize="Title" Margin="10,0,0,20"/>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+            <!--Row 2 ==> auto-->
+            <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Text="SITES TO EXPLORE" FontAttributes="Bold" FontSize="18" TextColor="Gray" Margin="10,0,0,0"/>
+            <!--Row 3 ==> auto-->
+            <ScrollView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalScrollBarVisibility="Never" >
+                <StackLayout Orientation="Horizontal" >
+                    <Frame Margin="10" Padding="0" CornerRadius="20" IsClippedToBounds="True"  WidthRequest="150" HeightRequest="150">
+                        <Grid RowDefinitions="*" Margin="0" Padding="0">
+                            <Image Grid.Row="0" Source="img3" Aspect="AspectFill"/>
+                            <Label Grid.Row="0" Text="Saddam" VerticalOptions="End" HorizontalOptions="Start" TextColor="White" FontSize="Title" Margin="10,0,0,20"/>
+                        </Grid>
+                    </Frame>
+                    <Frame Margin="10" Padding="0" CornerRadius="20" IsClippedToBounds="True"  WidthRequest="150" HeightRequest="150">
+                        <Grid RowDefinitions="*" Margin="0" Padding="0">
+                            <Image Grid.Row="0" Source="img4" Aspect="AspectFill"/>
+                            <Label Grid.Row="0" Text="Saddam" VerticalOptions="End" HorizontalOptions="Start" TextColor="White" FontSize="Title" Margin="10,0,0,20"/>
+                        </Grid>
+                    </Frame>
+
+                    <Frame Margin="10" Padding="0" CornerRadius="20" IsClippedToBounds="True"  WidthRequest="150" HeightRequest="150">
+                        <Grid RowDefinitions="*" Margin="0" Padding="0">
+                            <Image Grid.Row="0" Source="img3" Aspect="AspectFill"/>
+                            <Label Grid.Row="0" Text="Saddam" VerticalOptions="End" HorizontalOptions="Start" TextColor="White" FontSize="Title" Margin="10,0,0,20"/>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+            <!--Row 4 ==> auto-->
+            <Frame Grid.Row="4" Grid.Column="0" Padding="0" Margin="10,0,0,0" CornerRadius="50" IsClippedToBounds="True" HeightRequest="35" WidthRequest="35" BackgroundColor="{StaticResource AppYellowColor}">
+                <Label Text="P" TextColor="White" FontSize="22" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Frame>
+            <Label Grid.Row="4" Grid.Column="1" Text="Lorem Ipsum is simply dummy text of the printing and Typesetting industry" FontSize="14" TextColor="Gray" Margin="5,0,5,0"/>
+            <!--Row 5 ==> auto-->
+            <ScrollView Grid.Row="5" Grid.Column="1" Orientation="Horizontal" HorizontalScrollBarVisibility="Never" >
+                <StackLayout Orientation="Horizontal" >
+                    <Frame Margin="10" Padding="0" CornerRadius="20" IsClippedToBounds="True"  WidthRequest="150" HeightRequest="150">
+                        <Grid RowDefinitions="*" Margin="0" Padding="0">
+                            <Image Grid.Row="0" Source="img3" Aspect="AspectFill"/>
+                            <Label Grid.Row="0" Text="Saddam" VerticalOptions="End" HorizontalOptions="Start" TextColor="White" FontSize="Title" Margin="10,0,0,20"/>
+                        </Grid>
+                    </Frame>
+                    <Frame Margin="10" Padding="0" CornerRadius="20" IsClippedToBounds="True"  WidthRequest="150" HeightRequest="150">
+                        <Grid RowDefinitions="*" Margin="0" Padding="0">
+                            <Image Grid.Row="0" Source="img4" Aspect="AspectFill"/>
+                            <Label Grid.Row="0" Text="Saddam" VerticalOptions="End" HorizontalOptions="Start" TextColor="White" FontSize="Title" Margin="10,0,0,20"/>
+                        </Grid>
+                    </Frame>
+
+                    <Frame Margin="10" Padding="0" CornerRadius="20" IsClippedToBounds="True"  WidthRequest="150" HeightRequest="150">
+                        <Grid RowDefinitions="*" Margin="0" Padding="0">
+                            <Image Grid.Row="0" Source="img3" Aspect="AspectFill"/>
+                            <Label Grid.Row="0" Text="Saddam" VerticalOptions="End" HorizontalOptions="Start" TextColor="White" FontSize="Title" Margin="10,0,0,20"/>
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
